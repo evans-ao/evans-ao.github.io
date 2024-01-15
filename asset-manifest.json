@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.62541eab.css",
-    "main.js": "/static/js/main.12af7d43.js",
+    "main.css": "/static/css/main.b0241d99.css",
+    "main.js": "/static/js/main.754f1f24.js",
     "static/js/787.22eca013.chunk.js": "/static/js/787.22eca013.chunk.js",
+    "static/media/evans_pic.jpg": "/static/media/evans_pic.d8f9647dbcb4b5eb031d.jpg",
+    "static/media/LuminousWaterwaysPreview.png": "/static/media/LuminousWaterwaysPreview.1da33046dfb40d2d13c6.png",
+    "static/media/HCIPreview.png": "/static/media/HCIPreview.d9fd107c0495d418ecc5.png",
+    "static/media/CS3733Preview.png": "/static/media/CS3733Preview.f622bd33c30a87f1da35.png",
+    "static/media/MOSEPreview.png": "/static/media/MOSEPreview.cfaff775034b910f7ae1.png",
+    "static/media/TarotArtsPreview.png": "/static/media/TarotArtsPreview.7cf41d8bb99712ab7d72.png",
+    "static/media/tir_circles.png": "/static/media/tir_circles.6fcc9084d2522502cbb5.png",
+    "static/media/di_slants.png": "/static/media/di_slants.5be4ae3b520804bcf68d.png",
     "index.html": "/index.html",
-    "main.62541eab.css.map": "/static/css/main.62541eab.css.map",
-    "main.12af7d43.js.map": "/static/js/main.12af7d43.js.map",
+    "main.b0241d99.css.map": "/static/css/main.b0241d99.css.map",
+    "main.754f1f24.js.map": "/static/js/main.754f1f24.js.map",
     "787.22eca013.chunk.js.map": "/static/js/787.22eca013.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62541eab.css",
-    "static/js/main.12af7d43.js"
+    "static/css/main.b0241d99.css",
+    "static/js/main.754f1f24.js"
   ]
 }
