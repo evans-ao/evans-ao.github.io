@@ -15,7 +15,6 @@ function App() {
           <Route path="/" element={<Home />} />
           {/* Default route (when no path matches) */}
           <Route path="*" element={<Home />} />
-
           
         </Routes>
     </Router>

@@ -4,35 +4,12 @@
   top: 0%;
   left: 50%;
   transform: translate(-50%, 0);
+  transform: scale(.8);
 
   align-items: center; /*Most important for centering everything in cotainer*/
   justify-content: center;
-  min-width: fit-content;
-  width:2000px;
-  max-width: 2000px;
-  max-height: fit-content;
-
-  border: 10px solid rgb(107, 203, 255);
+  /*border: 10px solid rgb(107, 203, 255);*/
 
   background-color: #ffffff;
-  overflow: auto;
-}
-
-
-.nope-site-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column; /* Adjust flex direction if needed */
-
-  max-width: 100%;
-  min-width: 720px;
-  max-height: 100%;
-
-  background-color: #ffffff;
-  border: 10px solid rgb(107, 203, 255);
-  padding: 100px;
-  padding-top: 0%;
-  border-radius: 5px;
-  overflow: auto;
-
+  overflow: visible;
 }

@@ -8,10 +8,11 @@ export default function Home () {
     //const navigate = useNavigate()
     
     return (
-        <div className='site-container' style={{position: 'relative'}} >
+        <div className='site-container' style={{position: 'absolute', top: '0px'}} >
             <basicLayout.SiteBar barDescription= "Portfolio-Site"/>
-            <basicLayout.LargeBanner/>
+            <basicLayout.IntroBanner/>
             <basicLayout.ResumeBlock/>
+
             <basicLayout.ProjectDirectory/>
 
             <basicLayout.TarotArtsDisplay/>
@@ -26,9 +27,10 @@ export default function Home () {
 
 
     /*
-             
             
-                      <basicLayout.SiteBar barDescription= "Portfolio-Site"/>
+
+            
+            <basicLayout.SiteBar barDescription= "Portfolio-Site"/>
             <basicLayout.LargeBanner/>
             <basicLayout.ResumeBlock/>
             <basicLayout.ProjectDirectory/>            

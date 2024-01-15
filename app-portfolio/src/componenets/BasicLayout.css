@@ -11,7 +11,7 @@
 
 .site-bar {
     display: flex;
-    z-index: 900;
+    position: relative;
     height: 56px;
     width: 100%;
     align-items: center;
@@ -40,7 +40,7 @@
     margin: 20px;
 }
 
-.large-banner {
+.intro-banner {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,8 +116,11 @@
 }
 
 .project-display{
+    position: relative;
     width: 1000px;
-    background-color: #b3b3b300; 
+    max-width: fit-content;
+    background-color: #b3b3b300;
+    margin-top: 100px;
 }
 
 
@@ -128,6 +131,12 @@
     font-size: 48px;
     font-weight: bold;
     margin: 0%;
+}
+
+.project-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 
@@ -167,35 +176,20 @@
     color: #3c78d8;
 }
 
-.vertical-container{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.filler-rectangle{
-    width: 250px;
-    height: 250px;
-    background-color: #968181;
-}
-
-
-.horizontal-container {
-    display: flex;
-    flex-direction: row;
-  }
 
 
 .site-container {
     display: flex;
-    position: relative;
+    position: absolute;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
     min-width: fit-content;
     max-width: 100%;
-    overflow: hidden;
-    border: 10px solid rgb(33, 148, 75);
+    overflow: visible;
 }
 
 .footer {
@@ -231,23 +225,39 @@
 }
 
 
-.zontainer {
-    margin: 20px;
-    margin-top: 30px;
-    flex: 1;
-    flex-direction:'row';
-    background-color: 'linen';
-    width: 500px;
-    height: 500px;
-    border: 10px solid rgb(107, 203, 255);
-  }
+.vertical-container{
+    display: flex;
+    flex-direction: column;
+}
 
-  .square {
-    height: 70px;
-    width: 70px;       
-  }
 
-  .square2 {
-    height: 70px;
-    width: 70px;       
-  }
+.horizontal-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+@keyframes floatUpDown {
+0%, 100% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(-20px); /* Adjust the amount of float */
+}
+}
+
+.floating-object {
+position: absolute;
+z-index: -1;
+
+background-color: #3498db00;
+margin: 0px;
+animation: floatUpDown 12s ease-in-out infinite;
+}
+
+.small-floating-object {
+    background-color: #3498db00;
+    margin: 0px;
+    animation: floatUpDown 12s ease-in-out infinite;
+}
+

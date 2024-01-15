@@ -1,85 +1,72 @@
 import './BasicLayout.css'; 
-import download from '../assets/iconography/download.png';
-import evans_pic from '../assets/pictures/evans_pic.jpg';
+import icons from '../assets/iconography/Icons';
+import pics from '../assets/pictures/Pics';
+import aesthetics, { asethics } from '../assets/site aesthetics/Aestheic';
 
 
 const openInNewTab = (url) => {
     window.open(url, "_blank", "noreferrer");
   };
 
-
+  
 export function SiteBar ({barDescription="Description"}) {
-    //const navigate = useNavigate(
     return (
         <div className="site-bar">
         
-            <span className="site-bar-label">
+            <p className="site-bar-label">
             {barDescription}
-            </span>
+            </p>
 
-            <span className="site-bar-label" style={{marginLeft:'55px'}}>
+            <p className="site-bar-label" style={{marginLeft:'55px'}}>
             News & Current Projects 
-            </span>
-    
+            </p>
         </div>
     );
 }
 
 
-export function PageMenu () {
-    //const navigate = useNavigate(
+export function IntroBanner () {
     return (
-        <div className="root">
-        </div>
-    );
-}
-
-
-export function LargeBanner () {
-    return (
-        <div className="large-banner">
+        <div className="intro-banner">
             <div className="vertical-container paragraph-description" 
                 style={{width: '90%', fontSize: '18px', alignItems: 'center'}}>                
                 
-                <img className ="circle-profile" src={evans_pic} alt="Download"/>
+                <div className='horizontal-container' style={{justifyContent: 'space-between',alignItems:'center'}}>
 
-                <h1 style={{fontFamily: 'Courier New, monospace'}}>
-                    Evans Owusu (they/them)
-                </h1>
+                    <img className ="small-floating-object" src={asethics.rhombus_v1} alt="Download"/>
+                    <img className ="small-floating-object" src={asethics.rhombus_v2} alt="Download"/>
+                    <img className ="circle-profile" src={pics.evansPic} alt="Download"/>
+                    <img className ="small-floating-object" src={asethics.reverse_rhombus_v1} alt="Download"/>
+                    <img className ="small-floating-object" src={asethics.reverse_rhombus_v2} alt="Download"/>
 
-                <p style={{fontWeight:'bold'}}>
-                    Software Enginnering | UX/User Interface | Game Design & Development | Qulatative Research
-                </p>
+                </div>
 
-                <p>
-                    Hello, I'm a WPI student, graduating in May 2024 with 
-                    a curious mind and that reflects in my main focous,
+                <span>
+                    <h1 style={{fontFamily: 'Courier New, monospace'}}>
+                        Evans Owusu (they/them)
+                    </h1>
 
-                    human-centric design! As a result I'm an experienced programmer 
-                    and designer in the subjects above!
-                </p>
-                
-                <p style={{fontWeight:'bold', color: '#3c78d8'}}>
-                    eaowusu@wpi.edu | Github: evans-ao | LinkedIn: evans-owusu-a
-                </p>
+                    <p style={{fontWeight:'bold'}}>
+                        Software Enginnering | UX/User Interface | Game Design & Development | Qulatative Research
+                    </p>
+
+                    <p>
+                        Hello, I'm a WPI student, graduating in May 2024 with 
+                        a curious mind and that reflects in my main focous,
+
+                        human-centric design! As a result I'm an experienced programmer 
+                        and designer in the subjects above!
+                    </p>
+                    
+                    <p style={{fontWeight:'bold', color: '#3c78d8'}}>
+                        eaowusu@wpi.edu | Github: evans-ao | LinkedIn: evans-owusu-a
+                    </p>
+                </span>
 
             </div>
         </div>
     );
 }
-
-export function WordList({ words }){
-    return (
-      
-        <div className="words-list">
-          {words.map((word, index) => (
-            <li key={index} className="word">
-              {word}
-            </li>
-          ))}
-        </div>
-    );
-};
 
 
 export function ResumeBlock () {
@@ -92,10 +79,9 @@ export function ResumeBlock () {
         <div className='resume-display'>
 
             <div className='horizontal-container' style={{justifyContent: 'center',alignItems: 'center'}}>
-
                 <div className="vertical-container" style={{alignItems: 'center'}}>
 
-                        <img src={download} alt="Download" style={{height:'77px', width:'67px'}}/>
+                        <img src={icons.download} alt="Download" style={{height:'77px', width:'67px'}}/>
                         <div style={{marginTop:'15px'}}></div>
                         <button className="resume-download-btn" onClick={()=> openInNewTab('https://drive.google.com/file/d/1NMGfOx_oGsjXV3eYGqn3K_HCoODY-lpC/view?usp=drive_link')}> 
                             Download </button>
@@ -159,80 +145,28 @@ export function  ProjectDirectory() {
 }
 
 
-export function  ProjectDisplay() {
-    return (
-        <div className="project-display">
-            <div className = "vertical-container" style={{alignItems: 'center'}}>
-
-                <h3 className='project-title'> Project Title</h3>
-                <hr className='project-line-break'/>
-                <div className='filler-rectangle' style={{width: '819px', height: '410px'}}></div>
-
-                <p className="paragraph-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Eget nunc lobortis mattis aliquam faucibus purus. 
-                    Dolor sit amet consectetur adipiscing elit. Libero volutpat sed cras ornare arcu. Mattis ullamcorper velit sed ullamcorper
-                    morbi. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras.
-                </p>
-
-                <div className='horizontal-container' style={{width: '70%', justifyContent: 'space-between', alignItems:'center'}}>
-                    <button className='project-btn' onClick={console.log("anchorlink")}>
-                        Project 1
-                    </button>
-
-                    <button className='project-btn' onClick={console.log("anchorlink")}>
-                        Project 2
-                    </button>
-
-                    <button className='project-btn' onClick={console.log("anchorlink")}>
-                        Project 3
-                    </button>
-                </div>
-
-            </div>
-        </div>
-    );
-}
-
-
-export function Footer(){
-    return(
-        <div className="footer" style={{marginTop: '100px'}}>
-            
-            <div className="vertical-container paragraph-description" 
-                style={{width: '90%', fontSize: '18px', alignItems: 'center', marginTop:'10px'}}>                
-                
-                <h1 style={{fontFamily: 'Courier New, monospace', fontSize:'25px', margin: '0%'}}>
-                    Made by: Evans Owusu
-                </h1>
-
-                <p style={{fontWeight:'bold'}}>
-                    Using React JSX and Hosted by Github Pages
-                </p>
-                
-                <p style={{fontWeight:'bold', color: '#3c78d8'}}>
-                    eaowusu@wpi.edu | Github: evans-ao | LinkedIn: evans-owusu-a
-                </p>
-            </div>
-        </div>
-    )
-}
-
-
 export function  TarotArtsDisplay() {
     return (
         <div className="project-display">
-            <div className = "vertical-container" style={{alignItems: 'center', marginTop:'100px'}}>
+            
+
+            <img className ="floating-object" src={aesthetics.di_circles} alt="Download"
+                style={{left:'-26%', top:'22%'}}/>
+
+            <img className ="floating-object" src={asethics.tri_circles} alt="Download"
+                style={{right:'-30%', top:'10%'}}/>
+
+
+            <div className = "vertical-container" style={{alignItems:'center'}}>
 
                 <h3 className='project-title'> Tarot Arts & Game Dev Tools </h3>
-                <hr className='project-line-break' style={{color:'red'}}/>
+                <hr className='project-line-break'/>
 
                 <p className="paragraph-description" style={{fontSize:'24px',color: '#3c78d8'}}>
                     Unity | C# | Design Patterns | Game Dev | Documentation
                 </p>
 
-
-                <div className='filler-rectangle' style={{width: '819px', height: '410px'}}></div>
+                <img className ="project-img" src={pics.tarotImage} alt="Download"/>
 
                 <p className="paragraph-description">
                     I coded the needs of a 2D physics-based platformer using Sonic Sprites. 
@@ -270,10 +204,18 @@ export function  TarotArtsDisplay() {
     );
 }
 
+
 export function  LuminousWatersDisplay() {
     return (
         <div className="project-display">
-            <div className = "vertical-container" style={{alignItems: 'center', marginTop:'100px'}}>
+
+            <img className ="floating-object" src={aesthetics.black_slants} alt="Download"
+                style={{left:'-26%', top:'10%'}}/>
+
+            <img className ="floating-object" src={asethics.blue_slants} alt="Download"
+                style={{right:'-30%', top:'30%'}}/>
+
+            <div className = "vertical-container" style={{alignItems: 'center'}}>
 
                 <h3 className='project-title'> Luminous Waterways: Unreal 5 Class </h3>
                 <hr className='project-line-break' style={{color:'red'}}/>
@@ -281,7 +223,7 @@ export function  LuminousWatersDisplay() {
                     Unreal | C/C++ | Blueprints | Design Patterns | Game Design | Team Lead
                 </p>
 
-                <div className='filler-rectangle' style={{width: '819px', height: '410px'}}></div>
+                <img className ="project-img" src={pics.luminousImage} alt="Download"/>
 
                 <p className="paragraph-description">
                     I led a cross-diciplinary team of 6 on creating a 3D unreal game, 
@@ -311,10 +253,19 @@ export function  LuminousWatersDisplay() {
     );
 }
 
+
 export function  IQPDisplay() {
     return (
         <div className="project-display">
-            <div className = "vertical-container" style={{alignItems: 'center', marginTop:'100px'}}>
+
+            <img className ="floating-object" src={aesthetics.blue_arrows} alt="Download"
+                style={{left:'-40%', top:'10%'}}/>
+
+            <img className ="floating-object" src={asethics.black_arrows} alt="Download"
+                style={{right:'-40%', top:'20%'}}/>
+
+
+            <div className = "vertical-container" style={{alignItems: 'center'}}>
 
                 <h3 className='project-title'> App Design: Giving MOSE A Voice </h3>
                 <hr className='project-line-break' style={{color:'red'}}/>
@@ -322,7 +273,7 @@ export function  IQPDisplay() {
                     AdobeXD/Figma | UI/UX | Qulatative Research | Team Lead | Documentation | Design
                 </p>
 
-                <div className='filler-rectangle' style={{width: '819px', height: '410px'}}></div>
+                <img className ="project-img" src={pics.moseImage} alt="Download"/>
 
                 <p className="paragraph-description">
                     With rising tides, a sinking city, and extreme weather conditions, Venice is experiencing 
@@ -358,17 +309,27 @@ export function  IQPDisplay() {
     );
 }
 
+
 export function  SoftEngDisplay() {
     return (
         <div className="project-display">
-            <div className = "vertical-container" style={{alignItems: 'center', marginTop:'100px'}}>
+
+
+            <img className ="floating-object" src={aesthetics.di_black_squares} alt="Download"
+                style={{left:'-40%', top:'50%'}}/>
+
+            <img className ="floating-object" src={asethics.di_blue_squares} alt="Download"
+                style={{right:'-40%', top:'0%'}}/>
+
+            <div className = "vertical-container" style={{alignItems: 'center'}}>
 
                 <h3 className='project-title'> Model Hospital Work Flow App </h3>
                 <hr className='project-line-break' style={{color:'red'}}/>
                 <p className="paragraph-description" style={{fontSize:'24px',color: '#3c78d8'}}>
                     Agile-Scrum | JavaFX | AdobeXD/Figma | Design Patterns | Followership | Documentation
                 </p>
-                <div className='filler-rectangle' style={{width: '819px', height: '410px'}}></div>
+
+                <img className ="project-img" src={pics.softEngImage} alt="Download"/>
 
                 <p className="paragraph-description">
                     On an 11 person team in my class, we apply Agile development 
@@ -400,17 +361,26 @@ export function  SoftEngDisplay() {
     );
 }
 
+
 export function  ASLTechDisplay() {
     return (
         <div className="project-display">
-            <div className = "vertical-container" style={{alignItems: 'center', marginTop:'100px'}}>
+
+
+
+            <img className ="floating-object" src={asethics.di_slants} alt="Download"
+                style={{left:'-15%', top:'25%'}}/>
+
+
+            <div className = "vertical-container" style={{alignItems: 'center'}}>
 
                 <h3 className='project-title'> Developing Novel Sign Language Tech </h3>
                 <hr className='project-line-break' style={{color:'red'}}/>
                 <p className="paragraph-description" style={{fontSize:'24px',color: '#3c78d8'}}>
                     JSX/React | AdobeXD | Iterative Participatory Design | Qulatative Research | Documentation
                 </p>
-                <div className='filler-rectangle' style={{width: '819px', height: '410px'}}></div>
+
+                <img className ="project-img" src={pics.hciImage} alt="Download"/>
 
                 <p className="paragraph-description">
                     This project took a human-centered computing approach to build a foundation that advances
@@ -436,6 +406,52 @@ export function  ASLTechDisplay() {
                 </div>
 
             </div>
+        </div>
+    );
+}
+
+
+export function Footer(){
+    return(
+        <div className="footer" style={{marginTop: '100px'}}>
+            
+            <div className="vertical-container paragraph-description" 
+                style={{width: '90%', fontSize: '18px', alignItems: 'center', marginTop:'10px'}}>                
+                
+                <h1 style={{fontFamily: 'Courier New, monospace', fontSize:'25px', margin: '0%'}}>
+                    Made by: Evans Owusu
+                </h1>
+
+                <p style={{fontWeight:'bold'}}>
+                    Using React JSX and Hosted by Github Pages
+                </p>
+                
+                <p style={{fontWeight:'bold', color: '#3c78d8'}}>
+                    eaowusu@wpi.edu | Github: evans-ao | LinkedIn: evans-owusu-a
+                </p>
+            </div>
+        </div>
+    )
+}
+
+
+export function WordList({ words }){
+    return (
+      
+        <div className="words-list">
+          {words.map((word, index) => (
+            <li key={index} className="word">
+              {word}
+            </li>
+          ))}
+        </div>
+    );
+};
+
+export function PageMenu () {
+    //const navigate = useNavigate(
+    return (
+        <div className="root">
         </div>
     );
 }
