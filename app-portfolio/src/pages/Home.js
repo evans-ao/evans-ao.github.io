@@ -13,7 +13,6 @@ export default function Home () {
             <basicLayout.IntroBanner/>
             <basicLayout.ResumeBlock/>
 
-            <basicLayout.ProjectDirectory/>
 
             <basicLayout.TarotArtsDisplay/>
             <basicLayout.LuminousWatersDisplay/>
@@ -27,7 +26,8 @@ export default function Home () {
 
 
     /*
-            
+                        <basicLayout.ProjectDirectory/>
+
 
             
             <basicLayout.SiteBar barDescription= "Portfolio-Site"/>
