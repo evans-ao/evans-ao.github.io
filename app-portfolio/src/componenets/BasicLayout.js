@@ -18,7 +18,6 @@ export function SiteBar ({barDescription="Description"}) {
             </p>
 
             <p className="site-bar-label" style={{marginLeft:'55px'}}>
-            News & Current Projects 
             </p>
         </div>
     );
@@ -51,9 +50,8 @@ export function IntroBanner () {
                     </p>
 
                     <p>
-                        Hello, I'm a WPI student, graduating in May 2024 with 
-                        a curious mind and that reflects in my main focous,
-
+                        Hello, I'm a 2024 Worcester Polytechnic Institute Graduate. 
+                        I have a curious mind that reflects in my main focous,
                         human-centric design! As a result I'm an experienced programmer 
                         and designer in the subjects above!
                     </p>
@@ -83,8 +81,8 @@ export function ResumeBlock () {
 
                         <img src={icons.download} alt="Download" style={{height:'77px', width:'67px'}}/>
                         <div style={{marginTop:'15px'}}></div>
-                        <button className="resume-download-btn" onClick={()=> openInNewTab('https://drive.google.com/file/d/1NMGfOx_oGsjXV3eYGqn3K_HCoODY-lpC/view?usp=drive_link')}> 
-                            Download </button>
+                        <button className="resume-download-btn" onClick={()=> openInNewTab('https://drive.google.com/file/d/1kiaZTNrTOpTouhFlM6IzZMDMqdqJiAO2/view?usp=sharing')}> 
+                            Resume </button>
                 </div>
 
 
@@ -194,9 +192,6 @@ export function  TarotArtsDisplay() {
                         GDD
                     </button>
 
-                    <button className='project-btn'>
-                        Demo TBD
-                    </button>
                 </div>
 
             </div>
