@@ -68,9 +68,9 @@ export function IntroBanner () {
 
 
 export function ResumeBlock () {
-    const Skills = ['Agile Scrum', 'UX Design', 'System Design', 'Qualitative Research', 'Human-Centric Design']
-    const Languages = ['C/C++', 'C#', 'Java', 'JavaFX', 'JSX/React', 'Python']
-    const Tools = ['Figma', 'Adobe Creative Cloud', 'Github', 'Unreal', 'Unity', 'RenPy', 'Dedoose']
+    const Skills = ['Agile Scrum', 'UX Design', 'System Design', 'Qualitative Research', '& Human-Centric Design']
+    const Languages = ['C/C++', 'C#', 'HTML', 'CSS','Java', 'JavaFX', 'JSX/React', '& Python']
+    const Tools = ['Figma', 'Drupal', 'Adobe Creative Cloud', 'Github', 'Unreal', 'Unity', "Ren'Py", '& Dedoose']
 
 
     return (
@@ -81,7 +81,7 @@ export function ResumeBlock () {
 
                         <img src={icons.download} alt="Download" style={{height:'77px', width:'67px'}}/>
                         <div style={{marginTop:'15px'}}></div>
-                        <button className="resume-download-btn" onClick={()=> openInNewTab('https://drive.google.com/file/d/1kiaZTNrTOpTouhFlM6IzZMDMqdqJiAO2/view?usp=sharing')}> 
+                        <button className="resume-download-btn" onClick={()=> openInNewTab('https://drive.google.com/file/d/1ZS59PtA9iiVrS2_Np__jGEk0HEhaASnE/view')}> 
                             Resume </button>
                 </div>
 
@@ -141,6 +141,60 @@ export function  ProjectDirectory() {
         </div>
     );  
 }
+
+
+export function MQPDisplay() {
+    return (
+        <div className="project-display">
+            
+
+            <img className ="floating-object" src={aesthetics.black_arrow_bar} alt="Download"
+                style={{left:'-20%', top:'40%'}}/>
+
+            <img className ="floating-object" src={asethics.blue_arrow_bar} alt="Download"
+                style={{right:'-20%', top:'15%'}}/>
+
+
+            <div className = "vertical-container" style={{alignItems:'center'}}>
+
+                <h3 className='project-title'> Failed To Send: An Internet Aesthetic VisualNovel </h3>
+                <hr className='project-line-break'/>
+
+                <p className="paragraph-description" style={{fontSize:'24px',color: '#3c78d8'}}>
+                    Ren'Py | Python | Innovation | Game Dev | Documentation
+                </p>
+
+                <img className ="project-img" src={pics.failedToSend} alt="Download"/>
+
+                <p className="paragraph-description">
+                    On a team of two with Carolyn Meyer and advisors Prof Stewart and Prof Smith. We developed a visual novel with a vast amount of technical
+                    exploration in Ren'Py.
+                </p>
+                <p className="paragraph-description" style={{marginTop:'5px'}}>
+                    To do this, we repurposed Prof. Stewart's original MQP pitch of an Internet Aesthetic Visual Novel (with her permission). We focused on 
+                    the aesthetics of websites rather than aesthetics popular with internet communities. Failed To Send demonstrates new ways of storytelling that 
+                    push Ren'Py to its limits. The code developed in this project paves the way for future representations of the Internet in visual novels.
+                </p>
+
+
+                <div className='horizontal-container' 
+                    style={{width: '70%', justifyContent: 'space-between', alignItems:'center', marginTop: '50px'}}>
+                    
+                    <button className='project-btn' onClick={()=> openInNewTab("https://digital.wpi.edu/concern/student_works/7m01br09c?locale=en")}>
+                        Our Research Paper
+                    </button>
+
+                    <button className='project-btn' onClick={()=> openInNewTab("https://drive.google.com/file/d/1jPgdwWxCeLKujoM_Qzgj2IAo9VkfPu0V/view")}>
+                        Our Project's Poster
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    );
+}
+
 
 
 export function  TarotArtsDisplay() {

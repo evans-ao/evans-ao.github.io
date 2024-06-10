@@ -13,7 +13,7 @@ export default function Home () {
             <basicLayout.IntroBanner/>
             <basicLayout.ResumeBlock/>
 
-
+            <basicLayout.MQPDisplay/>
             <basicLayout.TarotArtsDisplay/>
             <basicLayout.LuminousWatersDisplay/>
             <basicLayout.IQPDisplay/>

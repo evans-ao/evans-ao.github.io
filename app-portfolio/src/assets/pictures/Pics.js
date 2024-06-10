@@ -4,6 +4,7 @@ import luminousImage from './LuminousWaterwaysPreview.png';
 import hciImage from './HCIPreview.png';
 import moseImage from './MOSEPreview.png';
 import softEngImage from './CS3733Preview.png';
+import failedToSend from './MQP-Demo-Photo.png';
 
 
 export const pics = {
@@ -12,7 +13,8 @@ export const pics = {
     luminousImage,
     hciImage,
     moseImage,
-    softEngImage
+    softEngImage,
+    failedToSend
 }
   
 export default pics;
