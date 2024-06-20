@@ -51,9 +51,8 @@ export function IntroBanner () {
 
                     <p>
                         Hello, I'm a 2024 Worcester Polytechnic Institute Graduate. 
-                        I have a curious mind that reflects in my main focous,
-                        human-centric design! As a result I'm an experienced programmer 
-                        and designer in the subjects above!
+                        I have a curious mind that reflects my main focus, human-centric design! 
+                        As a result, I'm an experienced programmer and designer in the subjects above!
                     </p>
                     
                     <p style={{fontWeight:'bold', color: '#3c78d8'}}>
@@ -167,12 +166,12 @@ export function MQPDisplay() {
                 <img className ="project-img" src={pics.failedToSend} alt="Download"/>
 
                 <p className="paragraph-description">
-                    On a team of two with Carolyn Meyer and advisors Prof Stewart and Prof Smith. We developed a visual novel with a vast amount of technical
+                    On a team of two with Carolyn Meyer and advisors Prof Karen Stewart and Prof Gillian Smith. We developed a visual novel with a vast amount of technical
                     exploration in Ren'Py.
                 </p>
                 <p className="paragraph-description" style={{marginTop:'5px'}}>
-                    To do this, we repurposed Prof. Stewart's original MQP pitch of an Internet Aesthetic Visual Novel (with her permission). We focused on 
-                    the aesthetics of websites rather than aesthetics popular with internet communities. Failed To Send demonstrates new ways of storytelling that 
+                    We repurposed Prof. Stewart's original MQP pitch of an Internet Aesthetic Visual Novel (with her permission). We focused on 
+                    the aesthetics of websites rather than the aesthetics popular with internet communities. Failed To Send demonstrates new ways of storytelling that 
                     push Ren'Py to its limits. The code developed in this project paves the way for future representations of the Internet in visual novels.
                 </p>
 
@@ -222,12 +221,12 @@ export function  TarotArtsDisplay() {
 
                 <p className="paragraph-description">
                     I coded the needs of a 2D physics-based platformer using Sonic Sprites. 
-                    Not only as a proof of concept for my game idea of Tarot Arts, but to provide
+                    Not only as a proof of concept for my game idea of Tarot Arts but to provide
                     useable documentation & APIs.
                 </p>
                 <p className="paragraph-description" style={{marginTop:'5px'}}>
-                    Tarot Arts gameplay loop revoles around collecting Tarot Cards to change the player's attributes. 
-                    These changes enable of vaitey of ways to do high-speed platforming
+                    Tarot Arts' gameplay loop revolves around collecting Tarot Cards to change the player's attributes. 
+                    These changes enable of variety of ways to do high-speed platforming
                 </p>
 
                 <p className="paragraph-description" style={{marginTop:'5px'}}>
@@ -275,15 +274,15 @@ export function  LuminousWatersDisplay() {
                 <img className ="project-img" src={pics.luminousImage} alt="Download"/>
 
                 <p className="paragraph-description">
-                    I led a cross-diciplinary team of 6 on creating a 3D unreal game, 
+                    I led a cross-disciplinary team of 6 in creating a 3D unreal game, 
                     called Luminous Waterways. Whereas the player navigated ancient ruins 
-                    to complete puzzles and purifiy the santuary's water. 
-                    The biggest mechanic was that rooms can be raranged when the puzzle is complete  
+                    to complete puzzles and purify the sanctuary's water. 
+                    The biggest mechanic was that rooms could be rearranged when the puzzle was complete.  
                 </p>
 
                 <p className="paragraph-description">
-                    I made use of blueprints, unreal c++, and multithreading to simulate 
-                    the movement of water across ever-shifting rooms. In addition to charting the
+                    I used blueprints, unreal C++, and multithreading to simulate 
+                    changing water levels across ever-shifting rooms. In addition to charting the
                     course of our project
                 </p>
 
@@ -332,11 +331,9 @@ export function  IQPDisplay() {
                 </p>
 
                 <p className="paragraph-description">
-                    In this project, I led a cross-diciplinary team of 4 to conduct a series of interviews. 
-                    We aim to find what information residents and business owners
-                    currently have access to regarding tide data, flooding, MOSE operations, and how the gates may affect flooding
-                    in their area. The data we obtained was then used to design a potential MOSE phone app which was then returned
-                    to interviewees for further feedback. 
+                    In this project, I led a cross-disciplinary team of 4 to make a phone app mockup. The mockup would describe 
+                    the operations of the MOSE gates. We aim to find what residents and business owners knew regarding tides, flooding, 
+                    MOSE operations, and how the gates may affect flooding in their area. The data we obtained helped us design a phone app.
                 </p>
 
                 <div className='horizontal-container' style={{width: '70%', justifyContent: 'space-between', alignItems:'center'}}>
@@ -438,10 +435,10 @@ export function  ASLTechDisplay() {
                 </p>
 
                 <p className="paragraph-description">
-                    The WPI HCI lab, American Sign Language Education Center (AEC), and I collaborated in creating UI and 
-                    implementing them in React/JSX. This was done thanks to participatory design, ample research.
-                    This took the form of a paid research position and independent study in B term 2021. 
-                    My work contibuted to the  AEC's actual surveys and my upperclassman's senior project. 
+                    The WPI HCI lab, American Sign Language Education Center (AEC), and I collaborated in creating accessible 
+                    web UI in React/JSX. We accomplished this through cycles of participatory and iterative design. This was 
+                    in the form of a paid research position and independent study in B term 2021. My work contributed to the 
+                    AEC's surveys and my upperclassman's senior project. 
                 </p>
 
                 <div className='horizontal-container' style={{width: '70%', justifyContent: 'space-between', alignItems:'center'}}>
