@@ -1,15 +1,1 @@
-.root {
-  position: absolute;
-  display: flex;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  transform: scale(.8);
 
-  align-items: center; /*Most important for centering everything in cotainer*/
-  justify-content: center;
-  /*border: 10px solid rgb(107, 203, 255);*/
-
-  background-color: #ffffff;
-  overflow: visible;
-}

@@ -5,6 +5,7 @@ import hciImage from './HCIPreview.png';
 import moseImage from './MOSEPreview.png';
 import softEngImage from './CS3733Preview.png';
 import failedToSend from './MQP-Demo-Photo.png';
+import evansPic2 from './evans_pic2.jpg';
 
 
 export const pics = {
@@ -14,7 +15,8 @@ export const pics = {
     hciImage,
     moseImage,
     softEngImage,
-    failedToSend
+    failedToSend,
+    evansPic2
 }
   
 export default pics;

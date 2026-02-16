@@ -31,13 +31,14 @@ export function IntroBanner () {
                 style={{width: '90%', fontSize: '18px', alignItems: 'center'}}>                
                 
                 <div className='horizontal-container' style={{justifyContent: 'space-between',alignItems:'center'}}>
+                    <img className ="circle-profile" src={pics.evansPic2} alt="Download"/>
 
+                    {/** 
                     <img className ="small-floating-object" src={asethics.rhombus_v1} alt="Download"/>
                     <img className ="small-floating-object" src={asethics.rhombus_v2} alt="Download"/>
-                    <img className ="circle-profile" src={pics.evansPic} alt="Download"/>
                     <img className ="small-floating-object" src={asethics.reverse_rhombus_v1} alt="Download"/>
                     <img className ="small-floating-object" src={asethics.reverse_rhombus_v2} alt="Download"/>
-
+                    */}
                 </div>
 
                 <span>
@@ -45,18 +46,24 @@ export function IntroBanner () {
                         Evans Owusu (they/them)
                     </h1>
 
-                    <p style={{fontWeight:'bold'}}>
-                        Software Enginnering | UX/User Interface | Game Design & Development | Qulatative Research
+
+                    <p style={{fontWeight:'bold'}}>Areas of Work</p>
+                    <p style={{fontWeight:'bold'}}>Software Enginnering, UX/User Design, Game Development, Qulatative Research, & Web Programming</p>
+
+                    <p>
+                        Hey there, I'm Evans, a 2024 Computer Science Major eager waiting to sink my teeth into some amazing work. 
+                        I graduated from WPI with a Computer Science degree in 2024. Now I'm working full time as a barista while self-studying and pursuing several projects. 
+                        Despite the struggle for time, I've strived to elevate my level of work ethic, creativity, skills, and collboration.
                     </p>
 
                     <p>
-                        Hello, I'm a 2024 Worcester Polytechnic Institute Graduate. 
-                        I have a curious mind that reflects my main focus, human-centric design! 
-                        As a result, I'm an experienced programmer and designer in the subjects above!
+                        Of special note is that collloaboration, I've learned incredible ideas and beocome a better developer as a result. 
+                        Work is expotenialy better with mutually benficery environment. I hope to find this aspect as I search for roles in: 
+                        software engeering, game programming, UX/UI development, front end web programming, and more
                     </p>
                     
                     <p style={{fontWeight:'bold', color: '#3c78d8'}}>
-                        eaowusu@wpi.edu | Github: evans-ao | LinkedIn: evans-owusu-a
+                        evansowusuworkare@gmail.com | Github: evans-ao | LinkedIn: evans-owusu-a
                     </p>
                 </span>
 
@@ -67,9 +74,9 @@ export function IntroBanner () {
 
 
 export function ResumeBlock () {
-    const Skills = ['Agile Scrum', 'UX Design', 'System Design', 'Qualitative Research', '& Human-Centric Design']
-    const Languages = ['C/C++', 'C#', 'HTML', 'CSS','Java', 'JavaFX', 'JSX/React', '& Python']
-    const Tools = ['Figma', 'Drupal', 'Adobe Creative Cloud', 'Github', 'Unreal', 'Unity', "Ren'Py", '& Dedoose']
+    const Skills = ['Agile Scrum ', 'UX Design ', ' System Design', ' Qualitative Research', ' & Human-Centric Design']
+    const Languages = ['C/C++ ', 'C# ', 'HTML ', 'CSS ','Java ', 'JavaFX ', 'JSX/React ', '& Python']
+    const Tools = ['Figma ', 'Drupal ', 'Adobe Creative Cloud ', 'Github ', 'Unreal ', 'Unity ', "Ren'Py ", '& Dedoose']
 
 
     return (
@@ -80,30 +87,22 @@ export function ResumeBlock () {
 
                         <img src={icons.download} alt="Download" style={{height:'77px', width:'67px'}}/>
                         <div style={{marginTop:'15px'}}></div>
-                        <button className="resume-download-btn" onClick={()=> openInNewTab('https://drive.google.com/file/d/1ZS59PtA9iiVrS2_Np__jGEk0HEhaASnE/view')}> 
+                        <button className="resume-download-btn" onClick={()=> openInNewTab('https://drive.google.com/file/d/1OumdqF5iuD_dGsvQVdH8hefiMRTyoBY7/view?usp=sharing')}> 
                             Resume </button>
                 </div>
 
 
-                <div className="vertical-container word" style={{marginLeft:'3%', color:'#3c78d8', fontSize: '15px'}}>
+                <div className="vertical-container" style={{marginLeft:'3%', color:'#3c78d8', fontSize: '14px'}}>
 
                     <span> Skills: </span>
-
-                    <div style={{marginTop:'15px'}}></div>
-                    <span> CS Languages: </span>
-
-                    <div style={{marginTop:'15px'}}></div>
-                    <span> Tools: </span>
+                    <p style={{color:'#000000'}}> {Skills}</p>
+                     <span> CS Languages: </span>
+                    <p style={{color:'#000000'}}> {Languages}</p>
+                     <span> Tools: </span>
+                    <p style={{color:'#000000'}}> {Tools}</p>
 
                 </div>
 
-                <div className="vertical-container" style={{marginLeft:'1%'}}>
-                        <WordList words={Skills} />
-                        <div style={{marginTop:'15px'}}></div>
-                        <WordList words={Languages} />
-                        <div style={{marginTop:'15px'}}></div>
-                        <WordList words={Tools} />
-                </div>
             </div>
 
         </div>
@@ -146,21 +145,22 @@ export function MQPDisplay() {
     return (
         <div className="project-display">
             
+            {/** 
 
             <img className ="floating-object" src={aesthetics.black_arrow_bar} alt="Download"
                 style={{left:'-20%', top:'40%'}}/>
 
             <img className ="floating-object" src={asethics.blue_arrow_bar} alt="Download"
                 style={{right:'-20%', top:'15%'}}/>
-
+*/}
 
             <div className = "vertical-container" style={{alignItems:'center'}}>
 
                 <h3 className='project-title'> Failed To Send: An Internet Aesthetic VisualNovel </h3>
                 <hr className='project-line-break'/>
 
-                <p className="paragraph-description" style={{fontSize:'24px',color: '#3c78d8'}}>
-                    Ren'Py | Python | Innovation | Game Dev | Documentation
+                <p className="paragraph-description" style={{fontSize:'20px',color: '#3c78d8'}}>
+                    Ren'Py | Python | Innovation | Game Dev
                 </p>
 
                 <img className ="project-img" src={pics.failedToSend} alt="Download"/>
@@ -170,7 +170,7 @@ export function MQPDisplay() {
                     exploration in Ren'Py.
                 </p>
                 <p className="paragraph-description" style={{marginTop:'5px'}}>
-                    We repurposed Prof. Stewart's original MQP pitch of an Internet Aesthetic Visual Novel (with her permission). We focused on 
+                    We repurposed Prof. Karen Stewart's original MQP pitch of an Internet Aesthetic Visual Novel (with her permission). We focused on 
                     the aesthetics of websites rather than the aesthetics popular with internet communities. Failed To Send demonstrates new ways of storytelling that 
                     push Ren'Py to its limits. The code developed in this project paves the way for future representations of the Internet in visual novels.
                 </p>
@@ -195,26 +195,26 @@ export function MQPDisplay() {
 }
 
 
-
 export function  TarotArtsDisplay() {
     return (
         <div className="project-display">
             
+            {/** 
 
             <img className ="floating-object" src={aesthetics.di_circles} alt="Download"
                 style={{left:'-26%', top:'22%'}}/>
 
             <img className ="floating-object" src={asethics.tri_circles} alt="Download"
                 style={{right:'-30%', top:'10%'}}/>
-
+            */}
 
             <div className = "vertical-container" style={{alignItems:'center'}}>
 
                 <h3 className='project-title'> Tarot Arts & Game Dev Tools </h3>
                 <hr className='project-line-break'/>
 
-                <p className="paragraph-description" style={{fontSize:'24px',color: '#3c78d8'}}>
-                    Unity | C# | Design Patterns | Game Dev | Documentation
+                <p className="paragraph-description" style={{fontSize:'20px',color: '#3c78d8'}}>
+                    Unity | C# | Design Patterns | Game Dev
                 </p>
 
                 <img className ="project-img" src={pics.tarotImage} alt="Download"/>
@@ -256,18 +256,19 @@ export function  TarotArtsDisplay() {
 export function  LuminousWatersDisplay() {
     return (
         <div className="project-display">
+            {/** 
 
             <img className ="floating-object" src={aesthetics.black_slants} alt="Download"
                 style={{left:'-26%', top:'10%'}}/>
 
             <img className ="floating-object" src={asethics.blue_slants} alt="Download"
                 style={{right:'-30%', top:'30%'}}/>
-
+            */}
             <div className = "vertical-container" style={{alignItems: 'center'}}>
 
                 <h3 className='project-title'> Luminous Waterways: Unreal 5 Class </h3>
                 <hr className='project-line-break' style={{color:'red'}}/>
-                <p className="paragraph-description" style={{fontSize:'24px',color: '#3c78d8'}}>
+                <p className="paragraph-description" style={{fontSize:'20px',color: '#3c78d8'}}>
                     Unreal | C/C++ | Blueprints | Design Patterns | Game Design | Team Lead
                 </p>
 
@@ -306,19 +307,21 @@ export function  IQPDisplay() {
     return (
         <div className="project-display">
 
+            {/**
+
             <img className ="floating-object" src={aesthetics.blue_arrows} alt="Download"
                 style={{left:'-40%', top:'10%'}}/>
 
             <img className ="floating-object" src={asethics.black_arrows} alt="Download"
                 style={{right:'-40%', top:'20%'}}/>
 
-
+            */}
             <div className = "vertical-container" style={{alignItems: 'center'}}>
 
                 <h3 className='project-title'> App Design: Giving MOSE A Voice </h3>
                 <hr className='project-line-break' style={{color:'red'}}/>
-                <p className="paragraph-description" style={{fontSize:'24px',color: '#3c78d8'}}>
-                    AdobeXD/Figma | UI/UX | Qulatative Research | Team Lead | Documentation | Design
+                <p className="paragraph-description" style={{fontSize:'20px',color: '#3c78d8', width: '70%'}}>
+                    AdobeXD/Figma | UI/UX | Qulatative Research | Team Lead | Design
                 </p>
 
                 <img className ="project-img" src={pics.moseImage} alt="Download"/>
@@ -336,7 +339,7 @@ export function  IQPDisplay() {
                     MOSE operations, and how the gates may affect flooding in their area. The data we obtained helped us design a phone app.
                 </p>
 
-                <div className='horizontal-container' style={{width: '70%', justifyContent: 'space-between', alignItems:'center'}}>
+                <div className='horizontal-container' style={{width: '60%', justifyContent: 'space-between', alignItems:'center'}}>
                 <button className='project-btn' onClick={()=>openInNewTab("https://docs.google.com/presentation/d/1rsDQm_Ctf0AaGvszJxp2hQHOk9YEGQ2W/edit?usp=sharing&ouid=106595661763651614649&rtpof=true&sd=true")}>
                         App-UI-Booklet
                     </button>
@@ -360,19 +363,20 @@ export function  SoftEngDisplay() {
     return (
         <div className="project-display">
 
+            {/** 
 
             <img className ="floating-object" src={aesthetics.di_black_squares} alt="Download"
                 style={{left:'-40%', top:'50%'}}/>
 
             <img className ="floating-object" src={asethics.di_blue_squares} alt="Download"
                 style={{right:'-40%', top:'0%'}}/>
-
+            */}
             <div className = "vertical-container" style={{alignItems: 'center'}}>
 
                 <h3 className='project-title'> Model Hospital Work Flow App </h3>
                 <hr className='project-line-break' style={{color:'red'}}/>
-                <p className="paragraph-description" style={{fontSize:'24px',color: '#3c78d8'}}>
-                    Agile-Scrum | JavaFX | AdobeXD/Figma | Design Patterns | Followership | Documentation
+                <p className="paragraph-description" style={{fontSize:'20px',color: '#3c78d8'}}>
+                    Agile-Scrum | JavaFX | AdobeXD/Figma | Design Patterns | Followership
                 </p>
 
                 <img className ="project-img" src={pics.softEngImage} alt="Download"/>
@@ -413,17 +417,18 @@ export function  ASLTechDisplay() {
         <div className="project-display">
 
 
+            {/** 
 
             <img className ="floating-object" src={asethics.di_slants} alt="Download"
                 style={{left:'-15%', top:'25%'}}/>
 
-
+            */}
             <div className = "vertical-container" style={{alignItems: 'center'}}>
 
                 <h3 className='project-title'> Developing Novel Sign Language Tech </h3>
                 <hr className='project-line-break' style={{color:'red'}}/>
-                <p className="paragraph-description" style={{fontSize:'24px',color: '#3c78d8'}}>
-                    JSX/React | AdobeXD | Iterative Participatory Design | Qulatative Research | Documentation
+                <p className="paragraph-description" style={{fontSize:'20px',color: '#3c78d8'}}>
+                    JSX/React | AdobeXD | Iterative Participatory Design | Qulatative Research
                 </p>
 
                 <img className ="project-img" src={pics.hciImage} alt="Download"/>
@@ -473,7 +478,7 @@ export function Footer(){
                 </p>
                 
                 <p style={{fontWeight:'bold', color: '#3c78d8'}}>
-                    eaowusu@wpi.edu | Github: evans-ao | LinkedIn: evans-owusu-a
+                    evansowusuworkarea@gmail.com | Github: evans-ao | LinkedIn: evans-owusu-a
                 </p>
             </div>
         </div>

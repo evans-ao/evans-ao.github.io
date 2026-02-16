@@ -8,7 +8,7 @@ export default function Home () {
     //const navigate = useNavigate()
     
     return (
-        <div className='site-container' style={{position: 'absolute', top: '0px'}} >
+        <div className='site-container' style={{display:'flex'}} >
             <basicLayout.SiteBar barDescription= "Portfolio-Site"/>
             <basicLayout.IntroBanner/>
             <basicLayout.ResumeBlock/>
